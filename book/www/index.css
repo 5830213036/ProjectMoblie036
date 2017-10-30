@@ -1,0 +1,67 @@
+.button1 {
+    background-color: rgb(230, 36, 36); /* Green */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100px ;
+    height: 50px ;
+}
+.p{
+    font-style: oblique;
+    color : white ;
+    font-size: 30px;
+}
+table.three{
+    width:100%;
+    border:0; 
+    color: white;
+    
+    } 
+table.three th { 
+    font-family: myFirstFont;
+    border-bottom:5px solid #CCC; 
+    border-top:5px solid #CCC; 
+    background-color: '';
+    color:red;
+    }
+table.three td { 
+    padding:5px; 
+    font-family: myFirstFont;
+    text-align: center;
+    border-bottom:5px dotted #CCC; 
+    }
+ .div2 {
+        width: 300px;
+        height: 100px;    
+        padding: 50px;
+        border: 1px solid red;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    .button2 {
+        background-color: rgb(230, 36, 36); /* Green */
+        border: none;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 100px ;
+        height: 30px ;
+    }
+
+    .font1 { 
+        padding:5px; 
+        font-family: myFirstFont;
+        text-align: center; 
+        color: white;
+        }

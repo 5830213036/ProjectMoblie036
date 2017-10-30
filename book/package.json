@@ -1,0 +1,23 @@
+{
+  "name": "com.example.book",
+  "displayName": "HelloWorld",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-plugin-camera": "^2.4.1"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-camera": {
+        "CAMERA_USAGE_DESCRIPTION": "your usage message",
+        "PHOTOLIBRARY_USAGE_DESCRIPTION": "your usage message"
+      }
+    }
+  }
+}

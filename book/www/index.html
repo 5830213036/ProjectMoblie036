@@ -1,0 +1,196 @@
+<!--A Design by W3layouts 
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!doctype html>
+<html>
+<head>
+<title>Proficient Login Form Flat Responsive widget Template :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Proficient Login Form Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- fonts -->
+<link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<!-- /fonts -->
+<!-- css -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type='text/css' media="all" />
+<link rel="stylesheet" href="index.css">
+<!-- /css -->
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!--boostrap-->
+
+</head>
+<body>
+<div class="overlay">
+	<h1 class="w3layouts agileits">REGISTER NOVEL</h1>
+	<div class="content-w3ls agileits">
+	<img src="" alt="" class="user-wthree"><br>
+    <div class="container">
+		<h2  style="margin-top:30px;">Photo Upload</h2>
+		<div class="row" style="margin-top:30px;">
+				<div class="col">
+					<div class="card">
+						<div class="card-block">
+							<img width="50%" id="photo1">
+						</div>
+					</div>
+	
+				</div>
+			</div>
+        <form>
+            <div class="form-group">
+                <input id="photo" type="file" class="form-control" aria-describedby="emailHelp" placeholder="Select a photo">
+				<button class="button2" type="button" id="upload">Submit</button>
+				<button class="button2" type="button" onclick="onDeviceReady()">Camera</button>
+			</div>
+		</form>
+		
+	</div>
+
+		<!--Create Database-->
+		<form action="#" method="post">
+				<h2 class="p"></h2>
+			<div class="form-group1-agile agile-info">
+				<input type="text" id="txtId" placeholder="STORY NAME"  >
+			</div>
+
+			<div class="form-group1-agile agile-info">
+				<input type="text" id="txtUserName" placeholder="DESCRIPTION" >
+			</div>
+
+			<div class="form-group2-agile agile-info">
+				<input type="text" id="txtEmail"  placeholder="CATEGORY" >	
+			</div>
+		
+			<input class="button1" id="btnInsert" type="button" value="CREATE">
+			<input class="button1" id="btnRead" type="button" value="VIEW">
+			<input class="button1" id="btnUpdate" type="button" value="UPDATE">
+			<input class="button1" id="btnDelete" type="button" value="DELETE">
+			
+			</form>
+			<!--INSERT AUTO Database-->
+			<!--<form action="#" method="post">
+									
+			<div class="form-group1-agile agile-info">
+			<input type="text" id="txtUserName1"  >
+			</div>
+					
+			<div class="form-group2-agile agile-info">
+			<input type="password" id="txtEmail1"   >	
+			</div>
+					
+					
+			<div class="form-group3-agile wthree">
+			<input type="checkbox" id="brand" value="">
+			<label for="brand"><span></span> Keep Me Logged In?</label>
+			</div>
+								
+			<input id="btnInsertAuto" type="button" value="LOG IN">
+								
+			</form>-->
+
+
+			<!--READ A ROW Database-->
+			
+			<form action="#" method="post">
+					
+			<div class="form-group1-agile agile-info">
+			</div>	
+			<br />
+			<table class="three" >
+				<thead>
+					<tr>
+						<th>STORY</th>
+						<th>DESCRIPTION</th>
+						<th>CATEGORY</th>
+					</tr>
+				</thead>
+				<tbody id="categoryList"></tbody>
+			</table>
+								
+			</form>
+
+
+
+			<!--READ ALL  Database-
+			<form action="#" method="post">					
+			</form>
+			<br />
+			<table class="three" align="center">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Email</th>
+					</tr>
+				</thead>
+				<input  class="button1" id="btnReadAll" type="button" value="VIEW">
+				<tbody id="lstTable"></tbody>
+
+			</table>-->
+
+			<!--Update Database-
+			<form action="#" method="post">
+					<h2 class="p">UPDATESTORY</h2>
+			<div class="form-group1-agile agile-info">
+			<input type="text" id="txtId2">
+			</div>
+					
+			<div class="form-group1-agile agile-info">
+			<input type="text" id="txtUserName2"  >
+			</div>
+					
+			<div class="form-group2-agile agile-info">
+			<input type="text" id="txtEmail2"   >	
+			</div>
+					
+								
+			<input id="btnUpdate" type="button" value="UPDATE">
+								
+			</form>-->
+
+
+
+			<!--Delete Database
+			<form action="#" method="post">
+					<h2 class="p">DELETE STORY</h2>
+			<div class="form-group1-agile agile-info">
+			<input type="text" id="txtId3">
+			</div>
+	
+			</form>-->
+		
+
+<!--
+		<a href="#" class="face-link"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
+		<a href="#" class="twitter-link"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+	</div>
+-->
+
+
+          
+
+         
+	
+	<div class="footer-w3ls w3-agile">
+		<p class="w3-agileits">© 2017 Proficient Login Form. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">w3layouts</a></p>
+	</div>	
+</div>
+<video autoplay loop id="video-background" poster="video/city.jpg" muted>
+  <source src="video/city.mp4" type="video/mp4">
+</video>	
+<!-- js -->
+<script src="js/modernizr.min.js"></script>
+<script src="index.js"></script>
+<script src="storage.js"></script>
+<!-- /js -->
+</body>
+</html>
